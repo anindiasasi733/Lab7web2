@@ -28,24 +28,24 @@
 1. Pertama-tama kita harus membuka aplikasi XAMPP, seterusnya kita pilih "***config***" pada **apache** 
    dan pilih "***php.ini***"
    
-![gambar 1](screenshot/1.png)
+![gambar 1](ss/1.png)
 
 2. Kalau sudah klik "***php.ini***" maka cari "***;extension=intl***" kemudian hapus tanda titik koma
 
 3. Lalu start apache dan buka "***shell***" pada xampp kemudian masuk ke directory ci4 yang terdapat didalam folder lab11_ci dalam htdocs xampp. Setelah itu coba tes dengan mengetik "***php spark***" seperti foto yang ada dibawah ini.
 
-![gambar 2](screenshot/2.png)
+![gambar 2](ss/2.png)
 
 4. Kalau sudah, ketik lagi "***php spark serve***" seperti foto yang dibawah ini 
 
-![gambar 3](screenshot/3.png)
+![gambar 3](ss/3.png)
 
 
 # Dan outputnya akan menjadi seperti ini 
-![gambar 4](screenshot/4.png)
+![gambar 4](ss/4.png)
 
 # lalu kita tambahkan 'LOGIN' 
-![gambar 4](screenshot/5.png)
+![gambar 4](ss/5.png)
 
 
 
