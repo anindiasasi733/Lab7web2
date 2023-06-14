@@ -1,54 +1,49 @@
-# CodeIgniter 4 Framework
+# Lab7web2
 
-## What is CodeIgniter?
+## Profil
+| #               | Biodata              |
+| --------------- | -----------------    |
+| **Nama**        | Anindia Sasikirana   |
+| **NIM**         | 312110268            |
+| **Kelas**       | TI.21.A.2            |
+| **Mata Kuliah** | Pemrograman Web 2    |
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
 
-This repository holds the distributable version of the framework.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+# konfigurasi untuk penggunaan codeigniter 4
 
-The user guide corresponding to the latest version of the framework can be found
-[here](https://codeigniter4.github.io/userguide/).
+1. download codeigniter4 yang bisa didownload pada codeigniter.com
 
-## Important Change with index.php
+2. buat folder lab11_ci pada htdocs lalu masukkan file codeigniter yang sudah di ekstrak
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+3. rename folder codeigniter yang awalnya codeigniter4-framework-v4.... menjadi ci4
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+4. pada folder ci4 cari file bernama env kemudian rename menjadi .env
 
-**Please** read the user guide for a better explanation of how CI4 works!
+5. buka file .env kemudian ubah CI_ENVIRONMENT = production menjadi CI_ENVIRONMENT = development kemudian save
 
-## Repository Management
+# konfigurasi xampp untuk mengakses codeigniter 4
 
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
+1. Pertama-tama kita harus membuka aplikasi XAMPP, seterusnya kita pilih "***config***" pada **apache** 
+   dan pilih "***php.ini***"
+   
+![gambar 1](ss/1.png)
 
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
+2. Kalau sudah klik "***php.ini***" maka cari "***;extension=intl***" kemudian hapus tanda titik koma
 
-## Contributing
+3. Lalu start apache dan buka "***shell***" pada xampp kemudian masuk ke directory ci4 yang terdapat didalam folder lab11_ci dalam htdocs xampp. Setelah itu coba tes dengan mengetik "***php spark***" seperti foto yang ada dibawah ini.
 
-We welcome contributions from the community.
+![gambar 2](ss/2.png)
 
-Please read the [*Contributing to CodeIgniter*](https://github.com/codeigniter4/CodeIgniter4/blob/develop/CONTRIBUTING.md) section in the development repository.
+4. Kalau sudah, ketik lagi "***php spark serve***" seperti foto yang dibawah ini 
 
-## Server Requirements
+![gambar 3](ss/3.png)
 
-PHP version 7.4 or higher is required, with the following extensions installed:
 
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
+# Dan outputnya akan menjadi seperti ini 
+![gambar 4](ss/4.png)
 
-Additionally, make sure that the following extensions are enabled in your PHP:
+# Lalu tambahkan login 
+![gambar 4](ss/5.png)
 
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+# Terima Kasih
